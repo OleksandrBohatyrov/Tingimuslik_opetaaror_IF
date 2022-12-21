@@ -1,5 +1,65 @@
 from math import *
 import datetime
+from random import *
+from time import sleep
+#21/12/22
+#n=int(input("Mitu toa korteris? "))
+#for i in range(1,n+1,1):
+#    t=float(input(f"{i}. toa Temperatuur: "))
+#    if t>18:
+#        print("Soe(Teplo)")
+#    else:
+#        print("Külm(Holodno)")
+
+#6
+#try:
+#    p=k=l=0
+#    kogus=randint(1,20)
+#    print(kogus)
+#    for i in range(1,kogus+1,1):
+#        a=randint(1,20)
+#        if a<=0:
+#            print("Error")
+#        else:
+#            if a<=165:
+#                print("Lühike")
+#                l+=1
+#            elif a>165 and a<180:
+#                print("Keskmine")
+#                k+=1
+#            elif a>=180:
+#                print("Pikk")
+#                p+=1
+#    print("Pikka kasvu",p,'inimes')
+#    print("Keskmine kasvu",k,'inimes')
+#    print("Lühike kasvu",l,'inimes')
+#except:
+#    print("Vale Andmetüüp")
+
+
+#p=k=l=0
+#kogus=randint(1,20)
+#print(kogus)
+#while kogus>0:
+#        kogus-=1
+#        sleep(1)
+#        a=randint(56,256)
+#        if a<=0:
+#            print("Error")
+#        else:
+#            if a<=165:
+#                print("Lühike")
+#                l+=1
+#            elif a>165 and a<180:
+#                print("Keskmine")
+#                k+=1
+#            elif a>=180:
+#                print("Pikk")
+#                p+=1
+#print("Pikka kasvu",p,'inimes')
+#print("Keskmine kasvu",k,'inimes')
+#print("Lühike kasvu",l,'inimes')
+
 
 
 #1
@@ -70,13 +130,13 @@ import datetime
 
 #5
 #try:
-#    a=float(input("Mis on teie toatemperatuur: "))
+#    a=float(input("mis on teie toatemperatuur: "))
 #    if a>=18:
-#        print("Teie toatemperatuur on keskmisest kõrgem, 18 kraadi Celsiuse järgi.")
+#        print("teie toatemperatuur on keskmisest kõrgem, 18 kraadi celsiuse järgi.")
 #    else:
-#        print("Teie toatemperatuur on keskmisest madalam, 18 kraadi Celsiuse järgi.")
+#        print("teie toatemperatuur on keskmisest madalam, 18 kraadi celsiuse järgi.")
 #except:
-#    print("Vale Andmetüüp")
+#    print("vale andmetüüp")
 
 #6
 #try:
@@ -179,15 +239,19 @@ import datetime
 
 
 #9
-#try:
-#    a=float(input("Utle pool a "))
-#    b=float(input("Utle pool b "))
-#    if a==b:
-#        print("See on ruut")
-#    else:
-#        print("See ei ole ruut")
-#except:
-#    print("Value Error")
+while True:
+    try:
+        a=float(input("Utle pool a "))
+        b=float(input("Utle pool b "))
+        if a==b:
+            print("See on ruut")
+            break
+        elif a<0 and b<0:
+            print("Error")
+        else:
+            print("See ei ole ruut")
+    except:
+        print("Value Error")
 
 
 #10
@@ -235,13 +299,13 @@ import datetime
 #    print("Value Error")
 
 #13
-try:
-    a=int(input("Kas sa oled mees?(jah-1 või ei-0) \n"))
-    if a==1:
-        b=int(input("Kui vana sa oled? "))
-        if b>=16 and b<=18:
-            print("sa sobid")
-    else:
-        print("sa oled naine sest, et sa ei sobi")
-except:
-    print("Value Error")
+#try:
+#    a=int(input("Kas sa oled mees?(jah-1 või ei-0) \n"))
+#    if a==1:
+#        b=int(input("Kui vana sa oled? "))
+#        if b>=16 and b<=18:
+#            print("sa sobid")
+#    else:
+#        print("sa oled naine sest, et sa ei sobi")
+#except:
+#    print("Value Error")
